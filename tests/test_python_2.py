@@ -83,7 +83,10 @@ def test_find_suitable_user():
 def function_title(function, *args) -> str:
     function_name = function.__name__.replace('_', ' ').title()
     arguments = ', '.join(args)
+    print(f'{function_name} [{arguments}]')
     return f'{function_name} [{arguments}]'
+
+
 def test_readable_function():
     open_browser(browser_name="Chrome")
     go_to_companyname_homepage(page_url="https://companyname.com")
